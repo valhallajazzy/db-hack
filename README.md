@@ -32,7 +32,9 @@ $ python manage.py shell
 Для пользования этой функцией на нужно создать экземпляр модели ученика, оценки которого мы хотим исправить.
 
 * Создадим его, заключив в переменную "schoolkid":
-  `schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")`
+```console
+  schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")
+```
 * Вызовем функцию, используя аргумент "schoolkid": `fix_marks(schoolkid)`
 * Радуемся исправленным оценкам
 
@@ -45,7 +47,9 @@ $ python manage.py shell
 Для пользования этой функцией на нужно создать экземпляр модели ученика, оценки которого мы хотим исправить.
 
 * Создадим его, заключив в переменную "schoolkid":
-  `schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")`
+```console
+  schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")
+```
 * Вызовем функцию, используя аргумент "schoolkid": `remove_chastisements(schoolkid)`
 * Радуемся удаленным замечаниям
 
