@@ -12,7 +12,7 @@
 * Скачиваем проект себе на ПК с [РЕПОЗИТОРИЯ](https://github.com/devmanorg/e-diary/tree/master) или подключаемся к запущенному серверу.
 * Скачиваем скрипт и помещаем в корневую диреторию проекта
 
-![Screenshot]()
+![Screenshot](https://github.com/valhallajazzy/db-hack/blob/main/pic_for_readme/direct_example.png)
 
 * Из корневой директории проекта подключаемся в Django shell с помощью команды:
 
