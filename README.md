@@ -23,7 +23,7 @@ $ python manage.py shell
 * Импортируем модели в нашу рабочую среду командой `from datacenter.models import *`
 * Импортируем функции скрипта в нашу рабочую среду `from scripts import *`
 
-![Screenshot]()
+![Screenshot](https://github.com/valhallajazzy/db-hack/blob/main/pic_for_readme/shell.png)
 
 ## Запуск скрипта
 
@@ -31,25 +31,27 @@ $ python manage.py shell
 
 Для пользования этой функцией на нужно создать экземпляр модели ученика, оценки которого мы хотим исправить.
 
-* Создадим его, заключив в переменную "schoolkid": `schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")`
+* Создадим его, заключив в переменную "schoolkid":
+  `schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")`
 * Вызовем функцию, используя аргумент "schoolkid": `fix_marks(schoolkid)`
 * Радуемся исправленным оценкам
 
 Пример:
 
-![Screenshot]()
+![Screenshot](https://github.com/valhallajazzy/db-hack/blob/main/pic_for_readme/fix_marks.png)
 
 ### Удаление замечаний от учителей (функция remove_chastisements)
 
 Для пользования этой функцией на нужно создать экземпляр модели ученика, оценки которого мы хотим исправить.
 
-* Создадим его, заключив в переменную "schoolkid": `schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")`
+* Создадим его, заключив в переменную "schoolkid":
+  `schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")`
 * Вызовем функцию, используя аргумент "schoolkid": `remove_chastisements(schoolkid)`
 * Радуемся удаленным замечаниям
 
 Пример:
 
-![Screenshot]()
+![Screenshot](https://github.com/valhallajazzy/db-hack/blob/main/pic_for_readme/remove_chastisements.png)
 
 ### Создание хвалебных отзывов от учителей (функция create_commendation)
 
@@ -60,5 +62,5 @@ $ python manage.py shell
 
 Пример:
 
-![Screenshot]()
+![Screenshot](https://github.com/valhallajazzy/db-hack/blob/main/pic_for_readme/create_commendation.png)
 
