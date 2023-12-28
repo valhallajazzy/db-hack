@@ -33,7 +33,7 @@ $ python manage.py shell
 
 * Создадим его, заключив в переменную "schoolkid" вызвав функцию get_schoolkid():
 ```console
-  schoolkid = get_schoolkid(full_name__contains="<имя ученика>")
+  schoolkid = get_schoolkid("<имя ученика>")
 ```
 * Вызовем функцию, используя аргумент "schoolkid": `fix_marks(schoolkid)`
 * Радуемся исправленным оценкам
@@ -48,7 +48,7 @@ $ python manage.py shell
 
 * Создадим его, заключив в переменную "schoolkid" вызвав функцию get_schoolkid():
 ```console
-  schoolkid = get_schoolkid(full_name__contains="<имя ученика>")
+  schoolkid = get_schoolkid("<имя ученика>")
 ```
 * Вызовем функцию, используя аргумент "schoolkid": `remove_chastisements(schoolkid)`
 * Радуемся удаленным замечаниям
