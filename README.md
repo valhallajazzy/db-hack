@@ -31,9 +31,9 @@ $ python manage.py shell
 
 Для пользования этой функцией на нужно создать экземпляр модели ученика, оценки которого мы хотим исправить.
 
-* Создадим его, заключив в переменную "schoolkid":
+* Создадим его, заключив в переменную "schoolkid" вызвав функцию get_schoolkid():
 ```console
-  schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")
+  schoolkid = get_schoolkid(full_name__contains="<имя ученика>")
 ```
 * Вызовем функцию, используя аргумент "schoolkid": `fix_marks(schoolkid)`
 * Радуемся исправленным оценкам
@@ -46,9 +46,9 @@ $ python manage.py shell
 
 Для пользования этой функцией на нужно создать экземпляр модели ученика, оценки которого мы хотим исправить.
 
-* Создадим его, заключив в переменную "schoolkid":
+* Создадим его, заключив в переменную "schoolkid" вызвав функцию get_schoolkid():
 ```console
-  schoolkid = Schoolkid.objects.get(full_name__contains="<имя ученика>")
+  schoolkid = get_schoolkid(full_name__contains="<имя ученика>")
 ```
 * Вызовем функцию, используя аргумент "schoolkid": `remove_chastisements(schoolkid)`
 * Радуемся удаленным замечаниям
@@ -59,7 +59,7 @@ $ python manage.py shell
 
 ### Создание хвалебных отзывов от учителей (функция create_commendation)
 
-Функция принимает два аргумента: schoolkid - <имя ученика>, subject - <предмет>
+Функция принимает два аргумента: schoolkid - <объект с учеником get_schoolkid()>, subject - <предмет>
 
 * Вызываем фунцкию прописывая аргументы: `create_commendation(schoolkid, subject)`
 * Радуемся появившимся хвалебным отзывам
